@@ -1,0 +1,32 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0f1424;
+  color: #fff;
+  font: 16px/1.65 ui-rounded, -apple-system, "SF Pro Rounded", system-ui, sans-serif;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+.mark {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: #ffcf5c; box-shadow: 0 0 60px rgba(255,207,92,.45);
+  display: grid; place-items: center; font-size: 34px; margin-bottom: 1.5rem;
+}
+h1 { font-size: 2.25rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; }
+.tagline { color: #ffcf5c; font-weight: 600; margin: 0 0 1.5rem; }
+p, li { color: #c7ccd8; }
+.muted { color: #9aa0ae; font-size: .9rem; }
+a { color: #ffcf5c; }
+ul { padding-left: 1.15rem; }
+li { margin: .35rem 0; }
+.card {
+  background: #1a2036; border-radius: 20px; padding: 1.25rem 1.4rem; margin: 1rem 0;
+}
+.pill {
+  display: inline-block; padding: .3rem .7rem; border-radius: 99px;
+  font-size: .85rem; font-weight: 700; color: #0f1424;
+}
+.yes { background: #3ddb8a; } .soon { background: #7db5ff; } .no { background: #8c919e; }
+footer { margin-top: 3rem; border-top: 1px solid #1f2640; padding-top: 1.25rem; }
+code { background:#1a2036; padding:.1rem .35rem; border-radius:6px; font-size:.9em; }

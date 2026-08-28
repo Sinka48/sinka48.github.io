@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Knock — invite</title>
+<link rel="stylesheet" href="/knock/style.css">
+</head>
+<body>
+<main>
+  <div class="mark">👋</div>
+  <h1 id="title">You've been invited to a squad</h1>
+  <p class="tagline" id="sub">Open this link on an iPhone with Knock installed.</p>
+  <div class="card" id="card">
+    <p class="muted">Invite code: <code id="code">—</code></p>
+    <p><a id="open" href="#">Open in Knock</a></p>
+  </div>
+  <p class="muted"><a href="/knock/">About Knock</a> · <a href="/knock/privacy.html">Privacy</a></p>
+</main>
+<script>
+  var match = window.location.pathname.match(/^\/knock\/j\/([A-Za-z0-9]{6})\/?$/);
+  if (match) {
+    var code = match[1].toUpperCase();
+    document.getElementById('code').textContent = code;
+    document.getElementById('open').href = 'knock://join/' + code;
+  } else {
+    document.getElementById('title').textContent = 'Page not found';
+    document.getElementById('sub').textContent = '';
+    document.getElementById('card').style.display = 'none';
+  }
+</script>
+</body>
+</html>

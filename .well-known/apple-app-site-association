@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["74JDJ6FFZS.com.s1nka.Knock"],
+        "components": [
+          {
+            "/": "/knock/j/*",
+            "comment": "Invite links. Everything else on this domain stays in the browser."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Knock — privacy policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="muted">Last updated 28 August 2026.</p>
+
+  <p>
+    Knock is a small app made by one person. This policy says exactly what it stores, why, and how
+    to get rid of it. There is no advertising, no analytics, no tracking, and nothing is sold or
+    shared with anyone.
+  </p>
+
+  <h2>What Knock stores</h2>
+  <ul>
+    <li><strong>Your account.</strong> Knock uses Sign in with Apple. It receives an account
+      identifier and, if you choose to share it, an email address — which may be Apple's private
+      relay address rather than your real one. Knock never sees your Apple password.</li>
+    <li><strong>Your display name and emoji.</strong> The ones you pick during setup. Your squads
+      see them.</li>
+    <li><strong>Your squads.</strong> Their names, icons, invite codes, and who is in them.</li>
+    <li><strong>Knocks and answers.</strong> Which squad, who knocked, the optional short note, and
+      whether each person said in, in a bit, or can't.</li>
+    <li><strong>A notification token.</strong> Issued by Apple, so knocks can reach your phone.
+      Without it the app cannot do the one thing it is for.</li>
+  </ul>
+
+  <h2>What Knock does not store</h2>
+  <ul>
+    <li>No contacts. Knock never reads your address book.</li>
+    <li>No location.</li>
+    <li>No photos. The camera is used only to scan an invite code, and nothing from it is recorded
+      or transmitted.</li>
+    <li>No messages. There is no chat in Knock — the only text anyone types is their own name and a
+      note of at most 60 characters attached to a knock.</li>
+    <li>No advertising or analytics identifiers of any kind.</li>
+  </ul>
+
+  <h2>Who can see what</h2>
+  <p>
+    People in a squad can see that squad's members, their names and emoji, and their answers to
+    that squad's knocks. Nobody outside a squad can see anything about it. An invite link reveals
+    only the squad's name, icon and how many people are in it — never who they are.
+  </p>
+
+  <h2>Where it is stored</h2>
+  <p>
+    On Supabase, hosted in Frankfurt, Germany. Access is enforced by database row-level security:
+    the server itself refuses to return rows belonging to squads you are not in. Notifications are
+    delivered by Apple's Push Notification service, which necessarily sees the notification text.
+  </p>
+
+  <h2>How long</h2>
+  <p>
+    Knocks and answers are kept while they are useful and are not retained as a permanent history.
+    A notification token that has not been used for 60 days is deleted automatically. Everything
+    else is kept until you delete your account.
+  </p>
+
+  <h2>Deleting everything</h2>
+  <p>
+    Settings → Delete account. Your profile, squads you are the last member of, your knocks and
+    your answers are deleted immediately and permanently. There is no recovery, and you do not have
+    to email anyone to do it.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Knock is not directed at children under 13 and does not knowingly collect information from
+    them.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes in a way that matters, the date at the top changes and the app's release
+    notes will say so.
+  </p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:kakh.sinauridze@gmail.com">kakh.sinauridze@gmail.com</a></p>
+
+  <footer><p class="muted"><a href="index.html">Back to Knock</a></p></footer>
+</main>
+</body>
+</html>
