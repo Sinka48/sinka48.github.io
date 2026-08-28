@@ -31,8 +31,14 @@
 <script>
   // On a phone with the app installed, iOS opens Knock before this page ever renders. This is
   // what the people without it see, so it has to carry the code in a form they can type.
+  //
+  // Two shapes are accepted: ?c=CODE, which is what the app generates because GitHub Pages can
+  // serve it with a real 200, and /knock/j/CODE, which older shared links use.
+  var params = new URLSearchParams(window.location.search);
+  var fromQuery = params.get('c');
   var parts = window.location.pathname.split('/').filter(Boolean);
-  var code = (parts[parts.length - 1] || '').toUpperCase();
+  var fromPath = parts[parts.length - 1] === 'j' ? '' : parts[parts.length - 1];
+  var code = (fromQuery || fromPath || '').toUpperCase();
   if (/^[BCDFGHJKLMNPQRSTVWXYZ23456789]{6}$/.test(code)) {
     document.getElementById('code').textContent = code;
     document.getElementById('open').href = 'knock://join/' + code;

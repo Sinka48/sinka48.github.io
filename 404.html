@@ -18,9 +18,10 @@
   <p class="muted"><a href="/knock/">About Knock</a> · <a href="/knock/privacy.html">Privacy</a></p>
 </main>
 <script>
+  var params = new URLSearchParams(window.location.search);
   var match = window.location.pathname.match(/^\/knock\/j\/([A-Za-z0-9]{6})\/?$/);
-  if (match) {
-    var code = match[1].toUpperCase();
+  var code = (params.get('c') || (match ? match[1] : '')).toUpperCase();
+  if (code) {
     document.getElementById('code').textContent = code;
     document.getElementById('open').href = 'knock://join/' + code;
   } else {

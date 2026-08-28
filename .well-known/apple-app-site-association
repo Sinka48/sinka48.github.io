@@ -5,8 +5,13 @@
         "appIDs": ["74JDJ6FFZS.com.s1nka.Knock"],
         "components": [
           {
+            "/": "/knock/j/",
+            "?": { "c": "?*" },
+            "comment": "Invite links. The query form is what the app generates, because GitHub Pages can serve it with a real 200 for anyone who does not have the app yet."
+          },
+          {
             "/": "/knock/j/*",
-            "comment": "Invite links. Everything else on this domain stays in the browser."
+            "comment": "The path form, kept working for links shared before the change."
           }
         ]
       }
